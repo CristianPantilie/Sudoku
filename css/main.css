@@ -1,0 +1,116 @@
+/*.divTable{*/
+/*    border-radius: 25px;*/
+/*    background: #73AD21;*/
+/*    padding: 20px;*/
+/*    width: 50%;*/
+/*    height: 400px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+.divTable{
+    display: table;
+    border-radius: 25px;
+    background: #42f5ce;
+    padding: 20px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+}
+.divSmallTable{
+    display: table;
+    border-radius: 5px;
+    background: #42f5ce;
+    /*padding: 20px;*/
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.divTableRow {
+    display: table-row;
+}
+.divTableHeading {
+    background-color: #EEE;
+    display: table-header-group;
+}
+.divTableCell {
+    border: 1px solid #999999;
+    display: table-cell;
+    text-align: center;
+    font-size: 170%;
+    padding: 3px 10px;
+}
+
+.divTableCellSelectable {
+    border: 1px solid #999999;
+    display: table-cell;
+    text-align: center;
+    font-size: 170%;
+    padding: 3px 10px;
+
+}
+
+.divTableCellSelectable {
+    border: 1px solid #999999;
+    display: table-cell;
+    text-align: center;
+    font-size: 170%;
+    padding: 3px 10px;
+
+}
+
+.inputBox{
+    background-color:rgba(0, 0, 0, 0);
+    color: black;
+    border: none;
+    outline:none;
+    width: 24px;
+    height:30px;
+
+    text-align: center;
+    font-size: 75%;
+
+    transition:height 1s;
+    -webkit-transition:height 1s;
+}
+
+
+.divTableCellImmutable {
+    border: 1px solid #999999;
+    background-color: #e6f542;
+    display: table-cell;
+    text-align: center;
+    font-size: 170%;
+    padding: 3px 10px;
+}
+
+.divBigTableCell {
+    border: 10px solid #999999;
+    display: table-cell;
+    text-align: center;
+    font-size: 170%;
+    padding: 3px 10px;
+}
+
+.divTableFoot {
+    background-color: #EEE;
+    display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+}
+
+.selected {
+    background-color: green;
+}
+
+.selected.divTableCellImmutable{
+    background-color: orange;
+}
+
+.invalidated{
+    background-color: red;
+}
+
+
