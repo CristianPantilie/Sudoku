@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Sudoku</title>
-    <script type = "text/javascript" src = "scripts/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type = "text/javascript" src = "scripts/app.js"></script>
+    <script type = "text/javascript" src = "scripts/index.js"></script>
     <link rel = "stylesheet" type = "text/css" href = "css/main.css"/>
 </head>
+<body>
+    <div class="loggedUser">
+        <script>$('.loggedUser').html("Logged in as " + localStorage.getItem("user"));</script></div>
+    <div id = "grid">
 
-<div id = "grid">
+    </div>
+    <div id="gridChoice">
+        Choose grid:
+        <select id="gridOptions" name="gridOptions" onchange="gridChange(this)">
+            <option value="default" >default</option>
+        </select>
+    </div>
+    <div id="scoreboard">
 
-</div>
+    </div>
+    <button id = "startButton" onclick="start()">
+        Start
+    </button>
+    <button id = "endButton" onclick="end()">
+        End
+    </button>
+    <div id = "totalTime">
+
+    </div>
+    <div id = "timer">
+
+    </div>
+    <div id = "counter">
+
+    </div>
+    <div id = >
+
+    </div>
 </body>
 </html>

@@ -1,11 +1,4 @@
-/*.divTable{*/
-/*    border-radius: 25px;*/
-/*    background: #73AD21;*/
-/*    padding: 20px;*/
-/*    width: 50%;*/
-/*    height: 400px;*/
-/*    margin: 0 auto;*/
-/*}*/
+
 
 .divTable{
     display: table;
@@ -39,15 +32,6 @@
     text-align: center;
     font-size: 170%;
     padding: 3px 10px;
-}
-
-.divTableCellSelectable {
-    border: 1px solid #999999;
-    display: table-cell;
-    text-align: center;
-    font-size: 170%;
-    padding: 3px 10px;
-
 }
 
 .divTableCellSelectable {
@@ -114,3 +98,6 @@
 }
 
 
+#startButton{
+
+}

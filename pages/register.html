@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type = "text/javascript" src = "../scripts/register.js"></script>
+</head>
+<body>
+    <div id="loggedIn" style="display: none">
+        Logged in as <div class="loggedUser"></div>
+        <br>
+        <form action="../index.html">
+            <input type="submit" value="Play" />
+        </form>
+    </div>
+    <div id="registration">
+        <form id="register-form" action="#">
+            <input id="username" type="text" placeholder="Username" value=""/>
+            <br>
+            <input id="pw" type="password" placeholder="Password" value=""/>
+            <br>
+            <input id="email" type="email" placeholder="E-mail" value="">
+            <br>
+            <input type="radio" name="gender" value="Femeie"> Femeie <br>
+            <input type="radio" name="gender" value="Barbat"> Barbat
+            <br>
+            Country:
+            <select id="country" name="country" form="register-form">
+                <option value="Romania">Romania</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            Games you're interested in:
+            <input type="checkbox" id="sudoku" name="games" value="Sudoku" checked>
+            <label for="sudoku">Sudoku</label>
+            <input type="checkbox" id="chess" name="games" value="Chess">
+            <label for="chess">Chess</label>
+            <input type="checkbox" id="go" name="games" value="Go">
+            <label for="go">Go</label>
+            <br>
+            Sudoku Proficiency: <input id="proficiency" type="range" name="proficiency" min="0" max="10">
+            <br>
+            <input id="rgstr_btn" type="submit" value="Sign up" onClick="store()"/>
+        </form>
+    </div>
+
+    <br><br><br><br>
+    <div id="login">
+        <form id="login-form" action="#">
+            <input id="usrname" type="text" placeholder="Enter Username" value=""/>
+            <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+            <input id="login_btn" type="submit" value="Login" onClick="check()"/>
+        </form>
+    </div>
+
+</body>
+</html>
